@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Нёрдс:каталог</title>
+        <link href="css/style.css" rel="stylesheet"> 
     </head>
     <body>
 
@@ -28,13 +29,13 @@
     	<div class="content-wrapper">
     		<div class="filter-wrapper">
     			<form class="filter">
-	    			<div class="filter-price">
-	    				<h2>Стоимость:</h2>
+	    			<fieldset class="filter-price">
+	    				<legend>Стоимость:</legend>
 	    				<input class="price-range" type="range" min="10" max="400000">
 	    				<p>от</p><input type="text"><p>до</p><input type="text">
-	    			</div>
-	    			<div class="filter-grid">
-	    				<h2>Сетка:</h2>
+	    			</fieldset>
+	    			<fieldset class="filter-grid">
+	    				<legend>Сетка:</legend>
 	    				<ul class="filter-list">	
 	    					<li><input type="radio" name="radio" id="check1" value="adaptive">
 	    						<label for="check1">Адаптивная</label>
@@ -46,9 +47,9 @@
 	    						<label for="check3">Резиновая</label>
 	    					</li>
 	    				</ul>
-	    			</div>
-	    			<div class="filter-features">
-	    				<h2>Особенности:</h2>
+	    			</fieldset>
+	    			<fieldset class="filter-features">
+	    				<legend>Особенности:</legend>
 	    				<ul class="filter-list">	
 	    					<li><input type="checkbox" id="check4"><label for="check4">Слайдер</label></li>
 	    					<li><input type="checkbox" id="check5"><label for="check5">Блок преимуществ</label></li>
@@ -56,7 +57,7 @@
 	    					<li><input type="checkbox" id="check7"><label for="check7">Галерея</label></li>
 	    					<li><input type="checkbox" id="check8"><label for="check8">Корзина</label></li>
 	    				</ul>
-	    			</div>
+	    			</fieldset>
 	    			<button class="filter-btn" type="submit">Показать</button>
 	    		</form>
     		</div>
@@ -71,22 +72,22 @@
     				<span class="sort-iconup"><a href="#"></a></span>
     			</div>
     			<article class="item">
-    				<img src="img/aviator.png" alt="aviator">
+    				<img src="img/aviator.jpg" alt="aviator">
     			</article>
     			<article class="item">
-    				<img src="img/sunset.png" alt="sunset">
+    				<img src="img/sunset.jpg" alt="sunset">
     			</article>
     			<article class="item">
-    				<img src="img/forte.png" alt="forte">
+    				<img src="img/forte.jpg" alt="forte">
     			</article>
     			<article class="item">
-    				<img src="img/modern.png" alt="modern">
+    				<img src="img/modern.jpg" alt="modern">
     			</article>
     			<article class="item">
-    				<img src="img/avenue.png" alt="avenue">
+    				<img src="img/avenue.jpg" alt="avenue">
     			</article>
     			<article class="item">
-    				<img src="img/dovetail.png" alt="dovetail">
+    				<img src="img/dovetail.jpg" alt="dovetail">
     			</article>
     		</div>
     		<div class="item-pagination">
@@ -100,7 +101,7 @@
 		<div class="contacts-wrapper">
             <div class="contacts-leftblock">
                 <div class="contacts">
-                    <p>Nёrds design studio</p>
+                    <p class="contacts-name">Nёrds design studio</p>
                     <p class="contacts-adress">191186, Санкт-Петербург,<br>
                                                 ул. Б.Конюшенная, д.19/8</p>
                     <p class="contacts-telephone">тел. +7(812)275-75-75</p>
