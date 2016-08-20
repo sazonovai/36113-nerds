@@ -8,25 +8,27 @@
     <body>
 
     	<header class="header-catalog-wrapper">
-    		<div class="header-logo">
-                <a href="index.html"><img src="img/header-logo.png" alt="Логотип Нёрдс"></a>
-            </div>
-            <nav class="header-nav">
-                <ul>
-                    <li><a href="#">Студия</a></li>
-                    <li><a href="#">Клиенты</a></li>
-                    <li><a href="#">Магазин</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="basket">
-            	<a href="#">Корзина</a>
-            </div>
-            <h1>Добро пожаловать в магазин<br>
-            готовых макетов</h1>
+    		<div class="container">
+	    		<div class="header-logo">
+	                <a href="index.html"><img src="img/header-logo.png" alt="Логотип Нёрдс"></a>
+	            </div>
+	            <nav class="header-nav">
+	                <ul>
+	                    <li><a href="#">Студия</a></li>
+	                    <li><a href="#">Клиенты</a></li>
+	                    <li><a href="#">Магазин</a></li>
+	                    <li><a href="#">Контакты</a></li>
+	                </ul>
+	            </nav>
+	            <div class="basket">
+	            	<a href="#">Корзина</a>
+	            </div>
+	            <h1>Добро пожаловать в магазин
+	            готовых макетов</h1>
+	        </div>    
     	</header>
 
-    	<div class="content-wrapper">
+    	<div class="content-wrapper container clearfix">
     		<div class="filter-wrapper">
     			<form class="filter">
 	    			<fieldset class="filter-price">
@@ -63,6 +65,7 @@
     		</div>
     		<div class="item-wrapper">
     			<ul class="item-filter">
+    				<li class="item-filter-type">Сортировать</li>
     				<li class="item-filter-type"><a href="#">По цене</a></li>
     				<li class="item-filter-type"><a href="#">По типу</a></li>
     				<li class="item-filter-type"><a href="#">По функционалу</a></li>
@@ -89,32 +92,34 @@
     			<article class="item">
     				<img src="img/dovetail.jpg" alt="dovetail">
     			</article>
+    			<div class="item-pagination">
+					<a class="page-choice" href="#">1</a>
+					<a class="page-choice" href="#">2</a>
+					<a class="page-choice" href="#">3</a>
+					<button class="page-next" type="button">Следующая</button>
+				</div>	
     		</div>
-    		<div class="item-pagination">
-				<a class="page-choice" href="#">1</a>
-				<a class="page-choice" href="#">2</a>
-				<a class="page-choice" href="#">3</a>
-				<button class="page-next" type="button">Следующая</button>
-			</div>		
     	</div>
 
 		<div class="contacts-wrapper">
-            <div class="contacts-leftblock">
-                <div class="contacts">
-                    <p class="contacts-name">Nёrds design studio</p>
-                    <p class="contacts-adress">191186, Санкт-Петербург,<br>
-                                                ул. Б.Конюшенная, д.19/8</p>
-                    <p class="contacts-telephone">тел. +7(812)275-75-75</p>
-                    <button class="contacts-btn">Напишите нам</button>
-                </div>
-            </div>
-            <div class="contacts-rightblock">
-                <img src="img/cursormap.png" alt="Указатель на карте">
-                <a href="index.html"><img src="img/contacts-logo.png" alt="Логотип на карте"></a>
-            </div>
+			<div class="container">
+	            <div class="contacts-leftblock">
+	                <div class="contacts">
+	                    <p class="contacts-name">Nёrds design studio</p>
+	                    <p class="contacts-adress">191186, Санкт-Петербург,<br>
+	                                                ул. Б.Конюшенная, д.19/8</p>
+	                    <p class="contacts-telephone">тел. +7(812)275-75-75</p>
+	                    <button class="contacts-btn">Напишите нам</button>
+	                </div>
+	            </div>
+	            <div class="contacts-rightblock">
+	                <img src="img/cursormap.png" alt="Указатель на карте">
+	                <a href="index.html"><img src="img/contacts-logo.png" alt="Логотип на карте"></a>
+	            </div>
+	        </div>    
         </div>
 
-        <footer class="footer-wrapper">
+        <footer class="footer-wrapper container">
             <section class="footer-social">
                 <a class="social-btn social-btn-vk" href="#"></a>
                 <a class="social-btn social-btn-fb" href="#"></a>
