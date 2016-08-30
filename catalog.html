@@ -3,38 +3,54 @@
     <head>
         <meta charset="utf-8">
         <title>Нёрдс:каталог</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=latin,cyrillic" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet"> 
     </head>
     <body>
 
     	<header class="header-catalog-wrapper">
-    		<div class="container">
+    		<div class="container clearfix">
 	    		<div class="header-logo">
 	                <a href="index.html"><img src="img/header-logo.png" alt="Логотип Нёрдс"></a>
 	            </div>
 	            <nav class="header-nav">
 	                <ul>
-	                    <li><a href="#">Студия</a></li>
+	                    <li><a href="index.html">Студия</a></li>
 	                    <li><a href="#">Клиенты</a></li>
-	                    <li><a href="#">Магазин</a></li>
+	                    <li><a href="catalog.html">Магазин</a></li>
 	                    <li><a href="#">Контакты</a></li>
 	                </ul>
 	            </nav>
 	            <div class="basket">
 	            	<a href="#">Корзина</a>
 	            </div>
-	            <h1>Добро пожаловать в магазин
-	            готовых макетов</h1>
-	        </div>    
+
+	        </div>
+	        <h1>Добро пожаловать в магазин готовых макетов</h1>    
     	</header>
 
     	<div class="content-wrapper container clearfix">
     		<div class="filter-wrapper">
-    			<form class="filter">
+    			<form class="filter action="#" method="post"">
 	    			<fieldset class="filter-price">
-	    				<legend>Стоимость:</legend>
-	    				<input class="price-range" type="range" min="10" max="400000">
-	    				<p>от</p><input type="text"><p>до</p><input type="text">
+	    				<legend class="filter-name">Стоимость:</legend>
+	    				<div class="range-filter">
+            				<div class="range-controls">
+              					<div class="scale">
+                					<div class="bar"></div>
+              					</div>
+              					<div class="toggle toggle-min"></div>
+              					<div class="toggle toggle-max"></div>
+            				</div>
+            				<div class="price-controls">
+              					<label class="min-price">от
+                					<input name="min-price" type="text" value="0">
+              					</label>
+              					<label class="max-price">до
+                					<input name="max-price" type="text" value="15000">
+              					</label>
+            				</div>
+          				</div>
 	    			</fieldset>
 	    			<fieldset class="filter-grid">
 	    				<legend>Сетка:</legend>
@@ -60,66 +76,127 @@
 	    					<li><input type="checkbox" id="check8"><label for="check8">Корзина</label></li>
 	    				</ul>
 	    			</fieldset>
-	    			<button class="filter-btn" type="submit">Показать</button>
+	    			<button class="btn filter-btn" type="submit">Показать</button>
 	    		</form>
     		</div>
     		<div class="item-wrapper">
     			<ul class="item-filter">
-    				<li class="item-filter-type">Сортировать</li>
+    				<li class="item-filter-type">Сортировать:</li>
     				<li class="item-filter-type"><a href="#">По цене</a></li>
     				<li class="item-filter-type"><a href="#">По типу</a></li>
     				<li class="item-filter-type"><a href="#">По функционалу</a></li>
     			</ul>
     			<div class="sort">
-    				<span class="sort-icondown"><a href="#"></a></span>
-    				<span class="sort-iconup"><a href="#"></a></span>
+    				<a href="#"><span class="sort-icondown active"></span></a>
+    				<a href="#"><span class="sort-iconup"></span></a>
     			</div>
     			<article class="item">
+    				 <ul class="browser">
+              			<li></li>
+              			<li></li>
+              			<li></li>
+            		</ul>
     				<img src="img/aviator.jpg" alt="aviator">
+    				<div class="item-hidden">
+              			<p class="item-title">Aviator</p>
+              			<p class="item-p">Одностраничный макет<br>
+              							 с авторским дизайном</p>
+              			<a href="#" class="btn btn-red">8000 Р.</a>
+           			</div>
     			</article>
     			<article class="item">
+    				<ul class="browser">
+              			<li></li>
+              			<li></li>
+              			<li></li>
+            		</ul>
     				<img src="img/sunset.jpg" alt="sunset">
+    				<div class="item-hidden">
+              			<p class="item-title">Sunset</p>
+              			<p class="item-p">Интернет-магазин<br>
+                		 				с личным кабинетом</p>
+              			<a href="#" class="btn btn-red">10000 Р.</a>
+            		</div>
     			</article>
     			<article class="item">
+    				<ul class="browser">
+              			<li></li>
+              			<li></li>
+              			<li></li>
+            		</ul>
     				<img src="img/forte.jpg" alt="forte">
+    				<div class="item-hidden">
+              			<p class="item-title">Forte</p>
+              			<p class="item-p">Отличный макет<br>
+              							 для личного блога</p>
+              			<a href="#" class="btn btn-red">5000 Р.</a>
+            		</div>
     			</article>
     			<article class="item">
-    				<img src="img/modern.jpg" alt="modern">
+    				<ul class="browser">
+              			<li></li>
+              			<li></li>
+              			<li></li>
+            		</ul>
+            		<img src="img/modern.jpg" alt="modern">
+            		<div class="item-hidden">
+              			<p class="item-title item-title-modern">Modern organic thai</p>
+              			<p class="item-p item-p-modern">Сайт для ресторана<br> 
+              							быстрого питания</p>
+              			<a href="#" class="btn btn-red">12 000 Р.</a>
+            		</div>
     			</article>
     			<article class="item">
+    				<ul class="browser">
+              			<li></li>
+              			<li></li>
+              			<li></li>
+            		</ul>
     				<img src="img/avenue.jpg" alt="avenue">
+    				<div class="item-hidden">
+              			<p class="item-title">Avenue</p>
+              			<p class="item-p">Макет для<br>
+              							 блога о путешествиях</p>
+              			<a href="#" class="btn btn-red">8000 Р.</a>
+            		</div>
     			</article>
     			<article class="item">
+    				<ul class="browser">
+              			<li></li>
+              			<li></li>
+              			<li></li>
+            		</ul>
     				<img src="img/dovetail.jpg" alt="dovetail">
+    				<div class="item-hidden">
+              			<p class="item-title">Dovetail</p>
+              			<p class="item-p">Интернет-магазин<br>
+              							 с галереей товаров</p>
+              			<a href="#" class="btn btn-red">14000 Р.</a>
+            		</div>
     			</article>
     			<div class="item-pagination">
-					<a class="page-choice" href="#">1</a>
+					<a class="page-choice active-page" href="#">1</a>
 					<a class="page-choice" href="#">2</a>
 					<a class="page-choice" href="#">3</a>
-					<button class="page-next" type="button">Следующая</button>
+					<button class="page-choice page-next" type="button">Следующая</button>
 				</div>	
     		</div>
     	</div>
 
-		<div class="contacts-wrapper">
-			<div class="container">
-	            <div class="contacts-leftblock">
-	                <div class="contacts">
-	                    <p class="contacts-name">Nёrds design studio</p>
-	                    <p class="contacts-adress">191186, Санкт-Петербург,<br>
-	                                                ул. Б.Конюшенная, д.19/8</p>
-	                    <p class="contacts-telephone">тел. +7(812)275-75-75</p>
-	                    <button class="contacts-btn">Напишите нам</button>
-	                </div>
-	            </div>
-	            <div class="contacts-rightblock">
-	                <img src="img/cursormap.png" alt="Указатель на карте">
-	                <a href="index.html"><img src="img/contacts-logo.png" alt="Логотип на карте"></a>
-	            </div>
-	        </div>    
+        <div class="contacts-wrapper">
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124054!2d30.320894616195037!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455724648764"
+      		width="100%" height="416" frameborder="0" style="border:0" allowfullscreen>
+      		</iframe>
+	        <div class="contacts">
+	        	<p class="contacts-name">Nёrds design studio</p>
+	            <p class="contacts-adress">191186, Санкт-Петербург,<br>
+	                                        ул. Б.Конюшенная, д.19/8</p>
+	            <p class="contacts-telephone">тел. +7(812)275-75-75</p>
+	            <a class="btn contacts-btn" href="/contacts">Напишите нам</a>
+	        </div>
         </div>
 
-        <footer class="footer-wrapper container">
+        <footer class="footer-wrapper container clearfix">
             <section class="footer-social">
                 <a class="social-btn social-btn-vk" href="#"></a>
                 <a class="social-btn social-btn-fb" href="#"></a>
@@ -130,5 +207,28 @@
                 <p>Скидка 10% для друзей из социальных сетей.</p>
             </section>
         </footer>
+
+        <div class="popup-wrapper">
+    		<form class="popup-form" action="#" method="get">
+      			<div class="form-field name-field">
+        			<label for="name-field">Ваше имя:</label>
+        			<input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="name-field">
+     	 		</div>
+      			<div class="form-field email-field">
+        			<label for="email-field">Ваш e-mail:</label>
+        			<input type="email" name="email" placeholder="Для отправки ответа" id="email-field">
+      			</div>
+      			<div class="form-field text-field">
+        			<label for="text-field">Текст письма:</label>
+        			<textarea name="text" placeholder="В свободной форме" id="text-field"></textarea>
+      			</div>
+      			<button class="btn popup-btn" type="submit">Отправить</button>
+    		</form>
+    		<button class="close" type="button" title="Закрыть">Закрыть</button>
+        </div>
+
+    <script src="js/feedback.js"></script>
+    <script type="text/javascript" src="http://yandex.st/jquery/1.4.4/jquery.min.js"></script>
+    <script src="js/selected-menu.js"></script>
     </body>
 </html>    	
